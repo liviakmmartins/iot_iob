@@ -1,0 +1,61 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.contato h1{
+    font-size: 50px;
+    text-align: center;
+    color: #f09524;
+}
+.contato p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+}
+.contato .card-item{
+    background-color: #02a1f0;
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 350px;
+    transition: 0.3s;
+}
+.contato .card-item a img{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+    box-sizing: border-box;
+    text-align: center;
+ 
+}
+.contato .card-item img{
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 10px auto;
+}
+.contato .card-item .nome-user{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+.contato .card-item .contato-user{
+    font-size: 15px;
+    padding: 0 15px;
+    transition: 0.3s;
+}
+.contato .card-item:hover{
+    background-color: #005f8f;
+    margin-top: -5px;
+}
+.contato .card-item:hover .nome-user,
+.contato .card-item:hover .contato-user{
+    color: white;
+}

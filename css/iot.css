@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section{
+    padding: 54px 0;
+
+}
+
+p{
+    color: #0000009c;
+    text-align: justify;
+    text-indent: 15px; 
+    /*text-indent é o espaço que é colocado antes de linhas de texto em um bloco(paragrafo)*/
+}
+.container{
+    max-width:1400px ;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+.container a img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+.btn{
+    background-color: #f09524;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition:0.1s;
+}
+.btn.animate-btn{
+    animation: animate-outline 1s ease-out infinite;
+}
+.btn:hover{
+    background-color: #b36709;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul a{
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+nav ul a:not(.btn)::after{
+    content:"";
+    background-color: #f09524;
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition:0.3s ;
+}
+nav ul a:hover::after{
+    width: 100%;
+}
+/*menu mobile*/
+/*nav .menu-icon img{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: none;  
+}
+nav .close-icon img{
+    width: 20px;
+    height: 20px;
+    display: none;
+}*/
+
+.banner{
+    display: flex;
+    justify-content: center;
+}
+.banner .banner-text{
+    margin:150px;
+    text-align: center;
+    padding: 0 90px;
+}
+.banner .banner-text h1{
+    font-size: 86px;
+    color: white;
+    text-shadow: 10px 0px 10px black;
+}
+.banner .banner-text p{
+    font-size: 25px;
+    color: white;
+    font-weight: lighter;
+    margin: 18px 0;
+    text-align: justify;
+}
+.footer{
+    background-color: #005f8f;
+    text-align: center;
+}
+.footer .container p{
+    color: white;
+}
+
+h2{
+    color: #f09524;
+    font-size: 38px;
+}
+
+ul li{
+    color: white;
+    font-size: 25px;
+    text-align: justify;
+
+}
+
+strong{
+    color: #f09524;
+}
+
+.legenda-foto img{
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.fotos-m img{
+    max-width: 300px;
+    max-height: 300px;
+    float: top;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-right: 40px;
+}
+
+.inicio img{
+    max-width: 600px;
+    max-height: 600px;
+    margin-top: 20px;
+}
+
+a{
+    color: #02a1f0;
+}
+
+
